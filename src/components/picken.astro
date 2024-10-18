@@ -1,0 +1,93 @@
+---
+
+---
+
+<div class="picken" id="Picken">
+    <div class="max">
+        <div class="content">
+            <div class="underline_title underline_title_W grid_title">
+                <h1>豬隻、雞隻專區</h1>
+            </div>
+            <div class="more grid_button">
+                <a href="">
+                    <p>查看豬雞隻保健品</p>
+                </a>
+            </div>
+            <img class="grid_pig" src="src/img/picken.png" alt="" />
+        </div>
+    </div>
+</div>
+
+<style>
+    .picken {
+        /* height: 230px; */
+        background-color: #05153735;
+        scroll-margin-top: 72px;
+    }
+
+    .underline_title {
+        margin-bottom: 0;
+    }
+
+    .underline_title::after {
+        z-index: 0;
+    }
+
+    .underline_title > h1 {
+        position: relative;
+        z-index: 1;
+    }
+
+    .max {
+        padding-left: 67px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        align-content: center;
+        display: grid;
+        align-items: center;
+        grid-template:
+            "title pig" 1fr
+            "button pig" 1fr;
+    }
+
+    .grid_title {
+        grid-area: title;
+    }
+
+    .grid_button {
+        grid-area: button;
+    }
+
+    .grid_pig {
+        grid-area: pig;
+        width: 100%;
+    }
+
+    .more {
+        width: 196px;
+        height: 40px;
+    }
+
+    @media (max-width: 1024px) {
+        .max {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .content {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            gap: 40px;
+            grid-template:
+                "title"
+                "pig"
+                "button";
+            justify-items: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+</style>

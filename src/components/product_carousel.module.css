@@ -1,0 +1,42 @@
+.wrapper {
+    display: none;
+
+    @media(max-width: 767px) {
+        width: 100vw;
+        display: block;
+    }
+}
+
+.carousel {
+    button {
+        width: 30px !important;
+        height: 30px !important;
+        scale: .8 1.3;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    button::after {
+        width: 100% !important;
+        height: 100% !important;
+        color: #71301c !important;
+        opacity: 1 !important;
+        border-inline-width: 3px 0 !important;
+        border-block-width: 3px 0 !important;
+    }
+
+}
+
+.product {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    color: #71301c;
+    font-weight: 600;
+
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,90 @@
+---
+
+---
+
+<div class="about" id="About">
+    <div class="max min_height about_content">
+        <div class="underline_title underline_title_Y">
+            <h2>關於亮道</h2>
+        </div>
+        <h3 class="subtitle">
+            <span>以預防保健替代抗生素</span>
+            <span>從免疫抗體對症下藥</span>
+        </h3>
+        <div class="content">
+            <p>
+                亮道公司一直以來都以營養免疫天然產品為導向。代理美國賽鴿營養生物科技產品，提供一系列天然非抗生素、無副作用的生物科技營養免疫保健產品，除掉用藥舊思維、搭配獨家專利特殊配方的營養產品，增強您賽鴿的飛翔速度、耐力及爆發力。
+            </p>
+        </div>
+        <div class="more">
+            <a href="">
+                <p>查看更多</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .about {
+        background-color: #fff;
+        scroll-margin-top: 72px;
+    }
+
+    .max {
+        position: relative;
+        padding-left: 67px;
+        align-content: center;
+        /* overflow: hidden; */
+        max-height: 700px;
+    }
+    .min_height {
+        min-height: 70vh;
+    }
+
+    .about_content {
+        & > div,
+        & > h3 {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .max > div {
+        position: relative;
+        z-index: 2;
+    }
+
+    .subtitle {
+        max-width: 617px;
+        margin-bottom: 35px;
+    }
+
+    .content {
+        max-width: 560px;
+        margin-bottom: 37px;
+    }
+
+   
+
+    @media (max-width: 767px) {
+        .max {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: auto;
+        }
+
+        .subtitle {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .content {
+            text-align: center;
+        }
+    }
+</style>

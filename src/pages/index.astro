@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Banner from "../components/banner.astro";
+import About from "../components/about.astro";
+import Picken from "../components/picken.astro";
+import Footer from "../components/footer.astro";
+import Comment from "../components/comment.astro";
+import Header from "../components/header.astro";
+import PopularProduct from "../components/popular_product.astro";
+---
+
+<Layout title="亮道企業有限公司">
+	<Header />
+	<Banner />
+	<div>
+		<About />
+		<PopularProduct />
+	</div>
+	<Comment />
+	<Picken />
+	<Footer />
+</Layout>
+
+<script src="https://kit.fontawesome.com/370da857e3.js" crossorigin="anonymous"
+></script>
+
+<style>
+	div {
+		position: relative;
+		overflow: hidden;
+	}
+
+	div::after {
+		content: "";
+		display: block;
+		position: absolute;
+		pointer-events: none;
+		background-repeat: no-repeat;
+		background-size: cover;
+		top: 36px;
+		right: -150px;
+		background-image: url(src/img/pigeon.png);
+		height: 671px;
+		width: 512px;
+		z-index: 0;
+	}
+
+	@media (min-width: 1440px) {
+		div {
+			/* overflow: visible; */
+		}
+		div::after {
+			top: 30px;
+			right: 0;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		div::after {
+			opacity: 0.15;
+		}
+	}
+
+	@media (max-width: 767px) {
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			padding-left: 20px;
+			padding-right: 20px;
+			height: auto;
+		}
+
+		div::after {
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			background-size: contain;
+			height: 100%;
+		}
+	}
+	@media (max-width: 375px) {
+		.max::after {
+			left: 65%;
+		}
+	}
+</style>

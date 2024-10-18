@@ -1,0 +1,96 @@
+---
+
+---
+
+<div class="banner">
+    <div class="max ">
+        <div class="black"></div>
+        <div class="title">
+            <h1>亮道企業有限公司<br />Brighten Ways</h1>
+            <h4>
+                致力於推廣天然飼料保健添加劑<br />天然的經營理念<br
+                />讓您的生活更健康！
+            </h4>
+        </div>
+    </div>
+</div>
+
+<style>
+    .banner {
+        margin-top: 72px;
+        background: #000;
+    }
+
+    .max {
+        height: 100vh;
+        background-image: url(src/img/banner.png);
+        background-position: center;
+        position: relative;
+        background-size: cover;
+        max-height: 870px;
+        box-shadow: 0 -30px 60px 0 #44372a;
+    }
+    
+    .black {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        opacity: 50%;
+        max-height: 870px;
+    }
+
+    .title {
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 67px;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: white;
+        margin-bottom: 40px;
+        line-height: 60px;
+    }
+    h4 {
+        color: white;
+    }
+
+    @media (max-width: 767px) {
+        .max {
+            height: unset;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .black {
+            height: unset;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .title {
+            position: relative;
+            height: unset;
+            transform: unset;
+            text-align: center;
+            left: unset;
+            top: unset;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+</style>

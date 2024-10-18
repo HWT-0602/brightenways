@@ -1,0 +1,203 @@
+---
+
+---
+
+<div class="comment" id="Comment">
+    <div class="max min_height">
+        <div class="underline_title underline_title_W">
+            <h1>好評推薦</h1>
+        </div>
+        <div class="comment_area">
+            <div class="comment_area_1">
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Annie"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>確實效果很好。我用了兩天效果明顯！</p>
+                    </div>
+                </div>
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Boots"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>
+                            才用喉肺順第二天，鴿子就飛的高飛的遠，100分鐘才見鴿子！
+                        </p>
+                    </div>
+                </div>
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=George"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>
+                            真的效果不錯！喝三天了，超過一半的鴿子很能飛。再多喝一兩天，看看能不能讓他們全都愛飛起來！對鴿子腸道也有一定的好處，種鴿也能喝的吧！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_area_1">
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Jack"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>這個藥真不錯，今天早上飛的100分鐘不見鴿子</p>
+                    </div>
+                </div>
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Bear"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>
+                            春天出生的幼鴿全程服用奈米鈣。剛剛結束的包頭北方公棚300公里39名，400公里32名（蘋果7一部）500公里251名（同一羽），500公里決賽12名（蘋果7一部）金鴿子獎盃一尊！
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="comment_block">
+                    <div class="user">
+                        <img
+                            src="https://api.dicebear.com/9.x/thumbs/svg?seed=Tigger"
+                            alt="avatar"
+                        />
+                    </div>
+                    <div class="comment_content">
+                        <p>初次用喉肺順飛行1小時30分鐘！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .comment {
+        background-color: #34635030;
+        /* padding-top: 80px; */
+        /* padding-bottom: 80px; */
+        scroll-margin-top: 72px;
+    }
+
+    .max {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .underline_title {
+        margin-bottom: 60px;
+        margin-left: 17px;
+    }
+
+    .underline_title::after {
+        z-index: 0;
+    }
+
+    .underline_title > h1 {
+        position: relative;
+        z-index: 1;
+    }
+    .comment_area {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        min-height: 625px;
+    }
+
+    .comment_area_1 {
+        display: flex;
+        justify-content: space-between;
+        flex: 50%;
+        flex-direction: column;
+    }
+    .comment_block {
+        display: flex;
+        padding: 36px 40px 36px 20px;
+        align-items: center;
+        background-color: rgb(255, 255, 255, 80%);
+        border-radius: 8px 8px;
+        box-shadow: 5px 5px 5px 0px #aaaaaa;
+        gap: 16px;
+    }
+
+    .comment_block:hover .user {
+        box-shadow: 2px 2px 5px 0px #aaaaaa;
+        transform: translate(-1px,-2px) rotate(35deg);
+    }
+
+    .user {
+        min-width: 60px;
+        height: 60px;
+        background-color: #c2d0cb;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 45px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+
+    p {
+        color: #4b2e06;
+    }
+
+    @media (max-width: 920px) {
+        .underline_title {
+            font-size: 32px;
+        }
+
+        .comment_area {
+            flex-direction: column;
+        }
+        .comment_area_1 {
+            gap: 30px;
+        }
+        .max {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+        .comment_block {
+            padding: 18px 20px;
+        }
+    }
+    @media (max-width: 400px) {
+        .comment_block {
+            flex-direction: column;
+            text-align: center;
+            gap: 8px;
+        }
+        .user {
+            margin-top: -40px;
+            border: 4px solid rgb(255, 255, 255, 80%);
+
+            /* box-shadow: 1px 1px 5px; */
+        }
+        .comment_area_1 {
+            gap: 40px;
+        }
+    }
+</style>

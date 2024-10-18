@@ -1,0 +1,274 @@
+---
+
+---
+
+<div class="header">
+    <div class="max">
+        <img class="header_logo" src="src/img/main icon.png" alt="" />
+        <div class="nav">
+            <a href="#About" class="nav_item">關於亮道</a>
+            <div class="nav_line"></div>
+            <a class="nav_item" href="#Product">熱門產品</a>
+            <div class="nav_line"></div>
+            <a href="#Comment" class="nav_item">好評推薦</a>
+            <div class="nav_line"></div>
+            <a href="#Picken" class="nav_item nav_picken">豬隻、雞隻專區</a>
+
+            <div class="icon nav_item">
+                <i class="fa-brands fa-square-facebook" style="color: #335aa7;"
+                ></i>
+                <i
+                    class="fa-brands fa-line"
+                    style="color: #3eb666;transform: scale(.92);"></i>
+                <i class="fa-solid fa-square-phone" style="color: #52bc64;"></i>
+                <i class="fa-solid fa-location-dot" style="color: #2b84ec;"></i>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="hamburger_nav">
+    <div class="side_bar">
+        <a href="#About" class="nav_item">關於亮道</a>
+        <a class="nav_item" href="#Product">熱門產品</a>
+        <a href="#Comment" class="nav_item">好評推薦</a>
+        <a href="#Picken" class="nav_item nav_picken">豬隻、雞隻專區</a>
+
+        <div class="icon">
+            <i class="fa-brands fa-square-facebook" style="color: #335aa7;"></i>
+            <i class="fa-brands fa-line" style="color: #3eb666;"></i>
+            <i class="fa-solid fa-square-phone" style="color: #52bc64;"></i>
+            <i class="fa-solid fa-location-dot" style="color: #2b84ec;"></i>
+        </div>
+    </div>
+    <div class="arrow"></div>
+</div>
+<div class="mask"></div>
+<script>
+    document.querySelector(".hamburger").addEventListener("click", () => {
+        const menu = document.querySelector(".hamburger_nav");
+        const mask = document.querySelector(".mask");
+        menu.classList.toggle("open");
+        mask.classList.toggle("open");
+    });
+
+    document.querySelector(".mask").addEventListener("click", () => {
+        const menu = document.querySelector(".hamburger_nav");
+        const mask = document.querySelector(".mask");
+        menu.classList.remove("open");
+        mask.classList.remove("open");
+    });
+</script>
+
+<style>
+    .mask {
+        background-color: #000000;
+        z-index: 20;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.2s ease;
+        pointer-events: none;
+        display: none;
+    }
+
+    .mask.open {
+        opacity: 0.2;
+        pointer-events: unset;
+    }
+
+    .header {
+        height: 72px;
+        padding-top: auto;
+        padding-bottom: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #edebe8;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    .nav_item {
+        display: inline-block;
+    }
+    .nav a {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .nav_line {
+        width: 3px;
+        height: 40px;
+        background-color: rgb(78, 56, 34, 40%);
+    }
+
+    .nav_picken {
+        color: #32634e;
+    }
+
+    .max {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding-left: 28px;
+        padding-right: 20px;
+    }
+    .header_logo {
+        height: 55px;
+    }
+
+    i {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .icon {
+        margin-left: 12px;
+        margin-top: auto;
+        display: flex;
+        gap: 12px;
+    }
+
+    .fa-line {
+        transform: scale(0.92);
+    }
+
+    .hamburger {
+        display: none;
+        aspect-ratio: 1;
+        width: 23px;
+    }
+
+    .hamburger div {
+        border: solid 1px #4e3822;
+    }
+
+    .hamburger_nav {
+        width: 50%;
+        max-width: 300px;
+        display: none;
+        position: fixed;
+        z-index: 30;
+        right: 0;
+        top: 72px;
+        bottom: 0;
+        padding-top: 20px;
+        padding-left: 8px;
+        padding-right: 12px;
+        background-color: #edebe8;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+    }
+
+    .arrow {
+        height: 100%;
+        width: 36px;
+        background-color: #edebe8;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        clip-path: polygon(100% 0, 50% 55%, 100% 100%);
+        transform-origin: right center;
+        transform: scaleX(0);
+        transition: all 0.3s linear 0.3s;
+    }
+
+    .hamburger_nav.open {
+        box-shadow: 0px -1px 20px 1px rgba(0, 0, 0, 0.2);
+        transform: translateX(0%);
+        transition: all 0.3s ease 0.3s;
+    }
+
+    .hamburger_nav.open .arrow {
+        transform: scaleX(1) translateX(1px);
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 925px) {
+        .mask {
+            display: unset;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 20%;
+            justify-content: center;
+        }
+
+        .side_bar {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-bottom: 10px;
+        }
+
+        .hamburger_nav {
+            display: unset;
+            .nav_item {
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                line-height: 50px;
+                padding-left: 10px;
+                font-size: 20px;
+                background: linear-gradient(to right, #4e3822 50%, #edebe8 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 0.1s ease-out;
+            }
+            .nav_picken {
+                background: linear-gradient(to right, #32634e 50%, #edebe8 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 0.1s ease-out;
+            }
+            .icon:hover {
+            }
+        }
+        .nav_item:hover {
+            background-position: left bottom;
+            color: #edebe8;
+        }
+
+        .nav_picken:hover {
+            background-position: left bottom;
+            background-color: #32634e;
+            color: #edebe8;
+        }
+    }
+    @media (max-width: 425px) {
+        .hamburger_nav {
+            .nav_item {
+                font-size: 16px;
+            }
+        }
+        .icon {
+            i {
+                font-size: 20px;
+            }
+        }
+        .fa-line {
+            transform: scale(0.92);
+        }
+    }
+</style>

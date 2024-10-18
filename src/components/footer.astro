@@ -1,0 +1,79 @@
+---
+
+---
+
+<div class="footer">
+    <div class="max">
+        <img class="footer_logo" src="src/img/main icon.png" alt="" />
+        <div class="col_line"></div>
+        <div class="info">
+            <h4 class="address">80452 高雄市鼓山區大順一路439號11樓</h4>
+            <div class="row_line"></div>
+            <h4 class="tel">Tel. 07 550 2375</h4>
+        </div>
+    </div>
+</div>
+
+<style>
+    .footer {
+        background-color: rgba(78, 56, 34, 10%);
+    }
+
+    .max {
+        display: flex;
+        padding-top: 78px;
+        padding-bottom: 31px;
+        padding-left: 54px;
+        padding-right: 76px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        gap: 56px;
+    }
+
+    .info {
+        max-width: 402px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .col_line {
+        width: 2px;
+        height: 100px;
+        background-color: #4e382240;
+    }
+
+    .row_line {
+        height: 2px;
+        background-color: #4e382240;
+    }
+
+    .footer_logo {
+        width: 40%;
+        max-width: 402px;
+    }
+
+    @media (max-width: 767px) {
+        .col_line {
+            display: none;
+        }
+        .row_line {
+            width: unset;
+        }
+        .max {
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .info {
+            margin-right: auto;
+            margin-left: auto;
+            width: unset;
+            max-width: unset;
+        }
+        .footer_logo {
+            width: 100%;
+        }
+    }
+</style>
