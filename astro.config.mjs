@@ -4,5 +4,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()]
+  integrations: [react()],
+  site:'https://HWT-0602.github.io',
+  base:'brightenways'
 });
