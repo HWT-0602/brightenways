@@ -6,8 +6,40 @@
 
 .mobile_show {
     display: none;
+    width: 100%;
 
     @media (max-width: 767px) {
         display: unset;
     }
+}
+
+.modal_container {
+    display: flex;
+    padding: 20px;
+}
+
+.modal_image{
+    img{
+        width: 100%;
+    }
+    width: 50%;
+}
+
+.modal_discription{
+    flex-grow: 1;
+}
+
+.modal_head{
+    display: flex;
+    p{
+        margin-right: auto;
+        font-size: 30px;
+    }
+    div{
+        font-size: 16px;
+    }
+}
+
+.modal_body{
+
 }

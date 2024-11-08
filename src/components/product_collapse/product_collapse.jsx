@@ -21,18 +21,43 @@ const ProductCollapse = ({ products, handleClickProduct }) => {
             label: categoryName,
             children: <div>
                 {categoryProducts.map((product) => {
-                    return <div key={product.title} onClick={() => handleClickProduct(product.title)}>{product.title}</div>
+                    return (
+                        <div key={product.title} onClick={() => handleClickProduct(product.title)}>
+                            <img style={{
+                                width: '100%',
+                                maxWidth: '300px',
+                                margin: '0 auto',
+                                display: 'block'
+                            }} src={product.image} alt="" />
+                            <div>{product.title}</div>
+                            <div>{product.content}</div>
+                        </div>)
                 })}
             </div>
         }
     })
     console.log(categorizedProducts)
 
-    return (
-        <Collapse
-            items={items}
-        />
-    )
+    return <div
+    style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '10px'
+    }}
+    > { items.map((item) => {
+        return (<Collapse style={{
+            width: '100%'
+        }}
+            items={[item]}
+        />)
+    })}</div>
+
 }
 
 export default ProductCollapse
+
+
+{/* <Collapse></Collapse>
+<Collapse></Collapse>
+<Collapse></Collapse>
+<Collapse></Collapse> */}
