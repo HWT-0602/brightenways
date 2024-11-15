@@ -30,7 +30,7 @@ export default function ProductDetail() {
         </div>
 
 
-        <Modal title=" " open={true} onCancel={() => setOpen(false)} width="60%" footer={null}>
+        <Modal title=" " open={open} onCancel={() => setOpen(false)} width="60%" footer={null}>
             {product && (
                 <div className={styles.modal_container}>
                     <div className={styles.modal_image}>
