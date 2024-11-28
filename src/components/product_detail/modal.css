@@ -1,0 +1,16 @@
+.ant-modal-root .ant-modal-wrap .ant-modal 
+{
+    width: 60% !important;
+    max-width: 1000px;
+    @media (max-width:950px) {
+        width: 80% !important;
+    }
+    
+    .ant-modal-content {
+    @media (max-width:950px) {
+        padding: 14px 14px;        
+    }
+    @media (max-width:540px) {
+        padding: 0;        
+    }
+}}

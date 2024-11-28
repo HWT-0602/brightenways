@@ -16,30 +16,66 @@
 .modal_container {
     display: flex;
     padding: 20px;
+
+    @media (max-width:950px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.modal_image{
-    img{
+.modal_image {
+    img {
         width: 100%;
     }
+
+    min-width: 200px;
     width: 50%;
+    
+    @media (max-width:1024px) {
+        
+        min-width: 150px;
+    }
 }
 
-.modal_discription{
+.modal_discription {
     flex-grow: 1;
 }
 
-.modal_head{
+.modal_head {
     display: flex;
-    p{
-        margin-right: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (max-width:540px) {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-right: 8px;
         font-size: 30px;
     }
-    div{
+
+    div {
         font-size: 16px;
+    }
+
+    &>div:last-child {
+        display: flex;
+        flex-direction: column;
+        @media (max-width:540px) {
+            width: 100%;
+        }
+        div {
+
+            font-size: 12px;
+        }
     }
 }
 
-.modal_body{
+.modal_entitle {
+    margin-right: auto;
+}
 
+.ant-modal-content{
+    border: 10px solid red;
 }

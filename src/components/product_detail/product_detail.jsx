@@ -6,6 +6,8 @@ import ProductCollapse from "../product_collapse/product_collapse";
 import styles from './product_detail.module.css'
 import { products } from "./product_detail.constants";
 
+import './modal.css'
+
 
 export default function ProductDetail() {
     const [open, setOpen] = useState(false);
@@ -30,7 +32,7 @@ export default function ProductDetail() {
         </div>
 
 
-        <Modal title=" " open={open} onCancel={() => setOpen(false)} width="60%" footer={null}>
+        <Modal title=" " open={open} onCancel={() => setOpen(false)} footer={null}>
             {product && (
                 <div className={styles.modal_container}>
                     <div className={styles.modal_image}>
@@ -39,8 +41,11 @@ export default function ProductDetail() {
                     <div className={styles.modal_discription}>
                         <div className={styles.modal_head}>
                             <p>{product.title}</p>
-                            <div>{product.enTitle}</div>
-                            <div>{product.details.subtitle1}</div>
+                            <div className={styles.modal_entitle}>{product.enTitle}</div>
+                            <div>
+                                <div>{product.details.subtitle1}</div>
+                                <div>NT$1000</div>
+                            </div>
                         </div>
                         <div className={styles.modal_body}>
                             <div>{product.details.subtitle2}</div>
