@@ -15,9 +15,9 @@ export default function MorePicken() {
                 查看豬雞隻保健品
             </div>
 
-            <Image className={styles.module_image} src="public/img/pickenDM.jpg" preview={{
-                visible:open,
-                onVisibleChange:(value)=>{
+            <Image className={styles.module_image} src="/brightenways/img/pickenDM.jpg" preview={{
+                visible: open,
+                onVisibleChange: (value) => {
                     setOpen(value)
                 }
 
