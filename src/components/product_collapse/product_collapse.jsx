@@ -29,8 +29,16 @@ const ProductCollapse = ({ products, handleClickProduct }) => {
                                 margin: '0 auto',
                                 display: 'block'
                             }} src={product.image} alt="" />
-                            <div>{product.title}</div>
-                            <div>{product.content}</div>
+                            <div style={{
+                                textAlign:"center",
+                                fontSize:'24px',
+                                color:'#301e04',
+                            }}>{product.title}</div>
+                            <div style={{
+                                textAlign:"center",
+                                fontSize:'16px',
+                                marginBottom:'12px',
+                            }}>{product.content}</div>
                         </div>)
                 })}
             </div>
