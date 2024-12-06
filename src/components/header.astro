@@ -1,45 +1,11 @@
 ---
-const icons = [
-    {
-        link: "https://www.facebook.com/Brightenways",
-        icon: {
-            class: 'fa-brands fa-square-facebook',
-            color: '#335aa7',
-        }
-    },
-    {
-        link: "https://www.facebook.com/profile.php?id=100005509183242",
-        icon: {
-            class: 'fa-brands fa-line',
-            color: '#3eb666',
-        }
-    },
-    {
-        link: "",
-        icon: {
-            class: 'fa-solid fa-square-phone',
-            color: '#52bc64',
-        }
-    },
-    {
-        link: "",
-        icon: {
-            class: 'fa-solid fa-location-dot',
-            color: '#2b84ec',
-        }
-        
-    },
-];
+import Icons from "./icons/icons";
 ---
 
 <div class="header">
     <div class="max">
         <a href="#Banner">
-            <img
-                class="header_logo"
-                src="/brightenways/img/main icon.png"
-                alt=""
-            />
+            <img class="header_logo" src="/img/main icon.png" alt="" />
         </a>
         <div class="nav">
             <a href="#About" class="nav_item">關於亮道</a>
@@ -51,13 +17,7 @@ const icons = [
             <a href="#Picken" class="nav_item nav_picken">豬隻、雞隻專區</a>
 
             <div class="icon nav_item">
-                <i class="fa-brands fa-square-facebook" style="color: #335aa7;"
-                ></i>
-                <i
-                    class="fa-brands fa-line"
-                    style="color: #3eb666;transform: scale(.92);"></i>
-                <i class="fa-solid fa-square-phone" style="color: #52bc64;"></i>
-                <i class="fa-solid fa-location-dot" style="color: #2b84ec;"></i>
+                <Icons client:load />
             </div>
         </div>
         <div class="hamburger">
@@ -75,19 +35,7 @@ const icons = [
         <a href="#Picken" class="nav_item nav_picken">豬隻、雞隻專區</a>
 
         <div class="icon">
-            <a href="https://www.facebook.com/Brightenways">
-                <i class="fa-brands fa-square-facebook" style="color: #335aa7;"
-                ></i>
-            </a>
-            <a href="">
-                <i class="fa-brands fa-line" style="color: #3eb666;"></i>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-square-phone" style="color: #52bc64;"></i>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-location-dot" style="color: #2b84ec;"></i>
-            </a>
+            <Icons client:load />
         </div>
     </div>
     <div class="arrow"></div>
@@ -184,9 +132,10 @@ const icons = [
     }
     .icon {
         margin-left: 12px;
-        margin-top: auto;
+        align-items: center;
         display: flex;
         gap: 12px;
+        font-size: 28px;
     }
 
     .fa-line {
@@ -245,6 +194,12 @@ const icons = [
     }
 
     @media (max-width: 925px) {
+        .icon {
+            margin-top: auto;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
         .mask {
             display: unset;
         }

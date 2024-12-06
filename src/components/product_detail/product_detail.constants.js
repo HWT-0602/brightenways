@@ -1,6 +1,6 @@
 export const products = [
     {
-        image: "/brightenways/img/product 1.jpg",
+        image: "/img/product 1.jpg",
         title: "愛鴿壯",
         enTitle: "Biomicro",
         category: "腸胃道",
@@ -21,7 +21,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 2.jpg",
+        image: "/img/product 2.jpg",
         title: "鴿壯源",
         category: "營養育雛",
         enTitle: "奈米生化鈣 Bostrong",
@@ -41,7 +41,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 3.jpg",
+        image: "/img/product 3.jpg",
         title: "喉肺順",
         category: "呼吸道",
         enTitle: "ImmunoHigh",
@@ -60,7 +60,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 4.jpg",
+        image: "/img/product 4.jpg",
         title: "寶礦酵母粉",
         category: "營養育雛",
         enTitle: "Biomineyeast",
@@ -76,7 +76,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 5.jpg",
+        image: "/img/product 5.jpg",
         title: "鴿滴淨",
         category: "呼吸道",
         enTitle: "Biotricho",
@@ -96,7 +96,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 6.jpg",
+        image: "/img/product 6.jpg",
         title: "鴿速健整腸劑",
         category: "腸胃道",
         enTitle: "PAC Soluble Plus",
@@ -119,7 +119,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 7.jpg",
+        image: "/img/product 7.jpg",
         title: "挺飛",
         category: "營養育雛",
         enTitle: "Biocollagen",
@@ -138,7 +138,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 8.jpg",
+        image: "/img/product 8.jpg",
         title: "鴿可耐",
         category: "催速、耐力",
         enTitle: "Gelectolyte",
@@ -153,7 +153,7 @@ export const products = [
         },
     },
     {
-        image: "/brightenways/img/product 9.jpg",
+        image: "/img/product 9.jpg",
         title: "極速高峰",
         category: "催速、耐力",
         enTitle: "Supra Fly",

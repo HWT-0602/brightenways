@@ -14,8 +14,8 @@ export default function ProductDetail() {
 
     const [modalKey, setModalKey] = useState('')
 
-    // const product = products.find((product) => { return product.title === modalKey })
-    const product = products[0]
+    const product = products.find((product) => { return product.title === modalKey })
+    // const product = products[0]
 
     const openProductModal = (title) => {
         setModalKey(title)

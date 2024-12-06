@@ -5,7 +5,7 @@ const ProductGrid = ({ products, handleClickProduct }) => {
         {
             products.map((product) => {
                 return (
-                    <div className={styles.product} onClick={() => handleClickProduct(product.title)}>
+                    <div key={product.title} className={styles.product} onClick={() => handleClickProduct(product.title)}>
                         <img src={product.image} alt="" />
                         <div className={styles.product_info}>
                             <div className={styles.info_title}>{product.title}</div>
