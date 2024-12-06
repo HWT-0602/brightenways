@@ -12,17 +12,27 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
+		<meta property="og:image" content="/img/banner.png" />
+		<meta
+			property="og:description"
+			content="亮道企業有限公司 Brighten Ways 致力於推廣天然飼料保健添加劑，天然的經營理念，讓您的生活更健康！"
+		/>
+		<title>亮道企業有限公司</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" /><link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/><link
 			href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
 			rel="stylesheet"
-		/>
-		<!-- <base href="{import.meta.env.BASE_URL}"> -->
-	</head>
+		/></head
+	>
+
+	<!-- <base href="{import.meta.env.BASE_URL}"> -->
+
 	<body>
 		<slot />
 	</body>
